@@ -44,7 +44,7 @@ TABLE_STYLE = """
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&family=Inter:wght@400;500;600;700;800&display=swap');
     .stApp { font-family:'Noto Sans KR','Inter',sans-serif; }
-    .main-title-area { text-align:center; margin-top:-20px; margin-bottom:36px; padding-bottom:28px; border-bottom:1px solid #e8ecf0; }
+    .main-title-area { text-align:center; margin-top:-40px; margin-bottom:44px; padding-bottom:32px; border-bottom:1px solid #e0e4e8; }
     .shoulder-icon { margin-bottom:8px; }
     .main-title-text { font-size:36px; font-weight:800; color:#1a1a2e; letter-spacing:-0.5px; line-height:1.2; }
     .factor-num { display:inline-flex; align-items:center; justify-content:center;
@@ -211,37 +211,7 @@ RoHI: <strong style="color:#34495E">노동 활동 '높음' → 2점</strong></p>
 # ══════════════════════════════════════════════════════════
 # MAIN CONTENT — HEADER (제목만 크게)
 # ══════════════════════════════════════════════════════════
-st.markdown("""
-<div class="main-title-area">
-    <div class="shoulder-icon">
-        <svg width="72" height="72" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- 몸통 (torso) -->
-            <path d="M35 95 L35 62 Q35 55 42 52 L50 50 L58 52 Q65 55 65 62 L65 95" fill="#e8ecf0" stroke="#b0bec5" stroke-width="1.5"/>
-            <!-- 목 (neck) -->
-            <rect x="44" y="30" width="12" height="14" rx="4" fill="#f5d6c3" stroke="#d4a989" stroke-width="1"/>
-            <!-- 머리 (head) -->
-            <circle cx="50" cy="24" r="14" fill="#f5d6c3" stroke="#d4a989" stroke-width="1"/>
-            <!-- 왼쪽 어깨 관절 (left shoulder joint) -->
-            <circle cx="32" cy="52" r="6" fill="#fff" stroke="#3498db" stroke-width="2"/>
-            <circle cx="32" cy="52" r="2.5" fill="#3498db"/>
-            <!-- 오른쪽 어깨 관절 (right shoulder joint) -->
-            <circle cx="68" cy="52" r="6" fill="#fff" stroke="#3498db" stroke-width="2"/>
-            <circle cx="68" cy="52" r="2.5" fill="#3498db"/>
-            <!-- 왼팔 (left arm) -->
-            <path d="M26 52 Q20 60 18 75" stroke="#d4a989" stroke-width="5" stroke-linecap="round" fill="none"/>
-            <!-- 오른팔 (right arm) -->
-            <path d="M74 52 Q80 60 82 75" stroke="#d4a989" stroke-width="5" stroke-linecap="round" fill="none"/>
-            <!-- 회전근개 표시 - 왼쪽 (rotator cuff highlight - left) -->
-            <path d="M36 46 Q32 44 28 47" stroke="#e74c3c" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.7"/>
-            <path d="M36 50 Q32 48 27 50" stroke="#e74c3c" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.7"/>
-            <!-- 회전근개 표시 - 오른쪽 (rotator cuff highlight - right) -->
-            <path d="M64 46 Q68 44 72 47" stroke="#e74c3c" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.7"/>
-            <path d="M64 50 Q68 48 73 50" stroke="#e74c3c" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.7"/>
-        </svg>
-    </div>
-    <div class="main-title-text">RoHI Score Calculator</div>
-</div>
-""",unsafe_allow_html=True)
+st.markdown('<div class="main-title-area"><div class="main-title-text">RoHI Score Calculator</div></div>',unsafe_allow_html=True)
 
 # ══════════════════════════════════════════════════════════
 # MAIN — INPUTS (2 columns for compactness)
