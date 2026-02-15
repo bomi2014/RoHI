@@ -45,11 +45,8 @@ TABLE_STYLE = """
     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&family=Inter:wght@400;500;600;700;800&display=swap');
     .stApp { font-family:'Noto Sans KR','Inter',sans-serif; }
     .header-badge { display:inline-block; background:linear-gradient(135deg,#1a1a2e,#16213e);
-        color:#fff; padding:6px 18px; border-radius:24px; font-size:11px;
-        font-weight:700; letter-spacing:2px; text-transform:uppercase; box-shadow:0 4px 14px rgba(26,26,46,0.2); }
-    .header-title-en { font-size:38px; font-weight:800; color:#1a1a2e; margin:14px 0 2px; text-align:center; letter-spacing:-0.5px; }
-    .header-title-kr { font-size:22px; font-weight:700; color:#555; margin:0 0 6px; text-align:center; }
-    .header-sub { font-size:12px; color:#8899aa; margin-top:6px; text-align:center; line-height:1.6; }
+        color:#fff; padding:14px 40px; border-radius:32px; font-size:28px;
+        font-weight:800; letter-spacing:3px; text-transform:uppercase; box-shadow:0 8px 32px rgba(26,26,46,0.25); }
     .factor-num { display:inline-flex; align-items:center; justify-content:center;
         width:24px; height:24px; border-radius:50%; font-size:11px; font-weight:800; color:#fff; margin-right:6px; }
     .factor-title { font-size:14px; font-weight:700; color:#1a1a2e; }
@@ -212,15 +209,9 @@ RoHI: <strong style="color:#34495E">노동 활동 '높음' → 2점</strong></p>
 </div>""", unsafe_allow_html=True)
 
 # ══════════════════════════════════════════════════════════
-# MAIN CONTENT — HEADER
+# MAIN CONTENT — HEADER (제목만 크게)
 # ══════════════════════════════════════════════════════════
-st.markdown('''
-    <div style="text-align:center; margin-top:4px;">
-        <span style="font-size: 32px; font-weight: bold; color: #31333F;">
-            RoHI Score Calculator
-        </span>
-    </div>
-    ''', unsafe_allow_html=True)
+st.markdown('<div style="text-align:center;margin-top:10px;margin-bottom:40px"><span class="header-badge">RoHI Score Calculator</span></div>',unsafe_allow_html=True)
 
 # ══════════════════════════════════════════════════════════
 # MAIN — INPUTS (2 columns for compactness)
