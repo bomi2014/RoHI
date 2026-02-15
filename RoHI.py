@@ -214,11 +214,13 @@ RoHI: <strong style="color:#34495E">노동 활동 '높음' → 2점</strong></p>
 # ══════════════════════════════════════════════════════════
 # MAIN CONTENT — HEADER
 # ══════════════════════════════════════════════════════════
-st.markdown('<div style="text-align:center;margin-top:4px"><span class="header-badge">RoHI Score Calculator</span></div>',unsafe_allow_html=True)
-st.markdown('<p class="header-title-en">Rotator Cuff Healing Index</p>',unsafe_allow_html=True)
-st.markdown('<p class="header-title-kr">회전근개 치유 예측 계산기</p>',unsafe_allow_html=True)
-st.markdown('<p class="header-sub">Kwon et al. (2019) AJSM · 6가지 독립적 예후인자 · 15점 만점 · 치료 알고리즘: Jackson, Bedi & Denard (2022) Arthroscopy</p>',unsafe_allow_html=True)
-st.markdown("<br>",unsafe_allow_html=True)
+st.markdown('''
+    <div style="text-align:center; margin-top:4px;">
+        <span style="font-size: 32px; font-weight: bold; color: #31333F;">
+            RoHI Score Calculator
+        </span>
+    </div>
+    ''', unsafe_allow_html=True)
 
 # ══════════════════════════════════════════════════════════
 # MAIN — INPUTS (2 columns for compactness)
